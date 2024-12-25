@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+    .left{
+        flex: 3;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .logo{
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            img{
+                width: 78px;
+            }
+        }
+    }
+    .right{
+       flex: 2;
+       display: flex;
+       align-items: center;
+       gap: 50px;
+       justify-content: flex-end;
+       background-color: coral;
+       height: 100%;
+
+       .register{
+            background-color: red;
+       }
+    } 
+}
