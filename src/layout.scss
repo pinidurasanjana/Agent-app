@@ -20,4 +20,9 @@
         background-color: coral;
         max-width: 600px;
     }
+
+    .content{
+        background-color: #ffff;
+        height: calc(100vh - 100px);
+    }
 }

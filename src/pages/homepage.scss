@@ -1,0 +1,37 @@
+.homepage{
+    display: flex;
+    height: 100%;
+
+    .txtContainer{
+        flex: 3;
+    }
+    .wrapper{
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        height: 100%;
+
+        .topic{
+            font-size: 64px;
+        }
+    }
+    .desc{
+        font-family: cursive;
+    }
+    .imgContainer{
+        flex: 2;
+        background-color: #E3F2FD;
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        img{
+            width: 115%;
+            position: absolute;
+            right: 0;
+        }
+    }
+  
+}

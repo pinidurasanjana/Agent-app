@@ -34,6 +34,6 @@ const [open,setOpen] = useState(false);
             </div>
         </div>
     </nav>
-   ) 
+   );
 }
 export default Navbar;
