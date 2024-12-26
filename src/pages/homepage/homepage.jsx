@@ -1,5 +1,5 @@
 import './homepage.scss';
-import Bar from '../components/searchbar/bar';
+import Bar from '../../components/searchbar/bar';
 
 function Homepage() {
   return (

@@ -41,7 +41,7 @@
             width:200px;
 
             @include lg {
-                padding: 0px 5px;
+                padding: 0px 7px;
         
                 &:nth-child(2),
                 &:nth-child(3) {
@@ -49,7 +49,6 @@
                 }
               }
               @include md {
-                width: 200px;
                 &:nth-child(2),
                 &:nth-child(3) {
                   width: 200px;
@@ -63,7 +62,8 @@
                   width: auto;
                 }
                 padding: 20px;
-                border: 1px solid #999;
+                border: 2px solid #010758;
+                border-bottom: none;
               }
         }
         button{
