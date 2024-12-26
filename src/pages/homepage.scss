@@ -1,8 +1,10 @@
+@import "src/responsive.scss";
+
 .homepage{
     display: flex;
     height: 100%;
 
-    .txtContainer{
+    .txtContainer{ 
         flex: 3;
     }
     .wrapper{
@@ -13,8 +15,24 @@
         justify-content: center;
         height: 100%;
 
+        @include lg{
+            padding-right: 50px;
+        }
+    
+        @include md{
+            padding: 0;
+        }
+
+        @include sm{
+            justify-content: flex-start;
+        }
+
         .topic{
             font-size: 64px;
+
+            @include lg {
+                font-size: 48px;
+            }
         }
     }
     .desc{
@@ -26,11 +44,19 @@
         position: relative;
         display: flex;
         align-items: center;
+
+        @include md {
+            display: none;
+        }
         
         img{
             width: 115%;
             position: absolute;
             right: 0;
+
+            @include lg {
+                width: 105%;
+            }
         }
     }
   

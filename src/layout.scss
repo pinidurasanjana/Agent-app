@@ -9,15 +9,15 @@
     padding-right: 23px;
 
     @include lg{
-        background-color: #f00;
+        background-color: white;
         max-width: 1000px;
     }
     @include md{
-        background-color: blue;
+        background-color: white;
         max-width: 800px;
     }
     @include sm{
-        background-color: coral;
+        background-color: white;
         max-width: 600px;
     }
 

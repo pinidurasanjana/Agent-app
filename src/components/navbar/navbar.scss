@@ -52,12 +52,13 @@ nav{
        justify-content: flex-end;
        background-color: #E3F2FD;
        height: 100%;
-       font-weight: b;
+       font-weight: bold;
 
        .register{
             background-color: #0056B3;
             color: #FFFFFF;
        }
+
        @include md{
             background-color: transparent;
        }
@@ -67,8 +68,7 @@ nav{
         margin: 20px;
         border-radius: 5px;
        }
-    
-    
+
         .menuIcon{
             display: none;
             z-index: 999;
@@ -101,7 +101,6 @@ nav{
             &.active{
                 right: 0;
             }
-
             @include sm{
                 a{
                     display: initial;
