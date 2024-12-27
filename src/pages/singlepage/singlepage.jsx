@@ -2,6 +2,7 @@ import "./singlepage.scss";
 import Slider from "../../components/slider/slider";
 import properties from "../../lib/properties";
 import { useParams } from "react-router-dom";
+import Map from "../../components/map/map";
 
 function SinglePage(){
     const { id } = useParams();
@@ -30,7 +31,27 @@ function SinglePage(){
                 </div>
             </div>
             <div className="features">
-                <div className="wrapper"></div>
+                <div className="wrapper">
+                    <p className="title">General</p>
+                    <div className="general">
+                        <div className="item">
+                            <img src="/size.png" alt=""/>
+                            <span>{property.size} sq ft</span>
+                        </div>
+                        <div className="item">
+                            <img src="/bed.png" alt=""/>
+                            <span>{property.bedrooms} Bedrooms</span>
+                        </div>
+                    </div>
+                    <p className="title">Location</p>
+                    <div className="mapContainer">
+                        <Map items={properties}/>
+                    </div>
+                    <button>
+                        <img src="/save.png" alt=""/>
+                        Save the Place
+                    </button>
+                </div>
             </div>
         </div>
     );
