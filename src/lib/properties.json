@@ -1,4 +1,4 @@
- [
+[
 	{
 		"id":"prop1",
 		"title":"Attractive three bedroom semi-detached family home",
@@ -18,9 +18,11 @@
 		"lat": 51.3883,
 		"lng": 0.0741,
 		"images":[
-			"../house1_1.png",
-			"../house1_2.png",
-			"../house1_3.png"
+			"../house1.png",
+			"../house3.png",
+			"../house4.png",
+			"../house5.png",
+			"../house2.png"
 		]
 	},
 	{
@@ -40,7 +42,14 @@
 			"year":2022
 		},
 		"lat": 51.3733991,
-		"lng": 0.0693921
+		"lng": 0.0693921,
+		"images":[
+			"../flat2.png",
+			"../flat1.png",
+			"../indoor.png",
+			"../indoor1.png",
+			"../indoor2.png"
+		]
 	},
 	{
 		"id": "prop3",
@@ -59,7 +68,14 @@
 			"year": 2023 
 		},
 		"lat": 51.4265279,
-		"lng": 0.0795086
+		"lng": 0.0795086,
+		"images":[
+			"../house5.png",
+			"../house2.png",
+			"../indoor3.png",
+			"../indoor4.png",
+			"../indoor5.png"
+		]
 	},
 	{
 		"id": "prop4",
@@ -70,7 +86,7 @@
 		"tenure": "Leasehold",
 		"description": "A well-maintained one-bedroom villa located in a peaceful suburban area. This property offers a cozy living space with a modern open-plan kitchen, a large double bedroom with built-in storage, and a stylish bathroom with contemporary fittings. The flat is part of a secure complex with allocated parking and well-kept communal gardens. Ideal for first-time buyers or professionals seeking a quiet retreat while being well-connected to the city center.",
 		"location": "Elm Street, Manchester M4",
-		"picture": "../any4.png",
+		"picture": "../vila.png",
 		"url": "properties/prop4.html",
 		"added": { 
 			"month": "July", 
@@ -78,7 +94,14 @@
 			"year": 2023 
 		},
 		"lat": 53.4839591,
-		"lng": -2.2446443
+		"lng": -2.2446443,
+		"images":[
+			"../indoor2.png",
+			"../vila.png",
+			"../villa1.png",
+			"../villa2.png",
+			"../villa3.png"
+		]
 	},
 	{
 		"id": "prop5",
@@ -97,7 +120,14 @@
 			"year": 2023 
 		},
 		"lat": 52.4984659,
-		"lng":-1.9263812
+		"lng":-1.9263812,
+		"images":[
+			"../villa4.png",
+			"../house4.png",
+			"../house3.png",
+			"../house5.png",
+			"../house6.png"
+		]
 	},
 	{
 		"id": "prop6",
@@ -116,7 +146,14 @@
 			"year": 2023 
 		},
 		"lat": 51.4543551,
-		"lng": -2.5948831
+		"lng": -2.5948831,
+		"images":[
+			"../villa5.png",
+			"../flat2.png",
+			"../house4.png",
+			"../indoor2.png",
+			"../house6.png"
+		]
 	},
 	{
 		"id": "prop7",
@@ -135,6 +172,13 @@
 			"year": 2023 
 		},
 		"lat": 51.2476823,
-		"lng": -0.7932803
+		"lng": -0.7932803,
+		"images":[
+			"../villa2.png",
+			"../villa.png",
+			"../villa4.png",
+			"../villa5.png",
+			"../villa6.png"
+		]
 	}
 ]

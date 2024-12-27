@@ -1,22 +1,31 @@
 import "./singlepage.scss";
 import Slider from "../../components/slider/slider";
-import Properties from "../../lib/properties";
+import properties from "../../lib/properties";
+import { useParams } from "react-router-dom";
 
 function SinglePage(){
+    const { id } = useParams();
+    const property = properties.find((property) => property.id === id);
+
     return(
         <div className="singlePage">
             <div className="details">
                 <div className="wrapper">
-                    {Properties.map(property=>(
-                        <Slider images={property.images}/>
-                    ))}
+                    <Slider images={property.images}/>
                     <div className="info">
-                        <div className="top">
-                            <div className="postInfo">
-                                
+                        <div className="post">
+                            <h1>{property.title}</h1>
+                            <div className="address">
+                                <img src="/pin.png" alt=""/>
+                                <span>{property.location}</span>
+                            </div>
+                            <div className="price">
+                                <span>$ {property.price}</span>
+                            </div>
+                            <div className="description">
+                                <p>{property.description}</p>
                             </div>
                         </div>
-                        <div className="bottom"></div>
                     </div>
                 </div>
             </div>
