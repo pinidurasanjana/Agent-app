@@ -1,109 +1,140 @@
  [
 	{
 		"id":"prop1",
+		"title":"Attractive three bedroom semi-detached family home",
 		"type":"House",
 		"bedrooms":3,
 		"price":750000,
 		"tenure":"Freehold",
 		"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
 		"location":"Petts Wood Road, Petts Wood, Orpington BR5",
-		"picture":"https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"picture":"../house1.png",
 		"url":"properties/prop1.html",
 		"added": {
 			"month":"October",
 			"day":12,
 			"year":2022
-		}
+		},
+		"lat": 51.3883,
+		"lng": 0.0741,
+		"images":[
+			"../house1_1.png",
+			"../house1_2.png",
+			"../house1_3.png"
+		]
 	},
 	{
 		"id":"prop2",
+		"title":"Two double bedroom, two bathroom, garden flat",
 		"type":"Flat",
 		"bedrooms":2,
 		"price":399995,
 		"tenure":"Freehold",
 		"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
 		"location":"Crofton Road Orpington BR6",
-		"picture":"images/prop2pic1small.jpg",
+		"picture":"../flat1.png",
 		"url":"properties/prop2.html",
 		"added": {
 			"month":"September",
 			"day":14,
 			"year":2022
-		}
+		},
+		"lat": 51.3733991,
+		"lng": 0.0693921
 	},
 	{
 		"id": "prop3",
+		"title": "Spacious four-bedroom family home with modern kitchen",
 		"type": "House",
 		"bedrooms": 4,
 		"price": 500000,
 		"tenure": "Freehold",
 		"description": "This spacious four-bedroom family home offers the perfect combination of practicality and style. It includes a modern kitchen with an island and dining area, a cozy living room with French doors leading to the backyard, and a separate study ideal for remote work. The master bedroom features an en-suite bathroom, while the other bedrooms are generously sized. The property includes a landscaped garden, a double garage, and is within walking distance to local schools, parks, and public transport.",
 		"location": "Green Lane, Kent DA2",
-		"picture": "images/prop3pic1.jpg",
+		"picture": "../house2.png",
 		"url": "properties/prop3.html",
 		"added": {
 			"month": "August", 
 			"day": 15, 
-			"year": 2023 }
+			"year": 2023 
+		},
+		"lat": 51.4265279,
+		"lng": 0.0795086
 	},
 	{
 		"id": "prop4",
-		"type": "Flat",
+		"title": "Well-maintained one-bedroom villa in peaceful suburban area",
+		"type": "Any",
 		"bedrooms": 1,
 		"price": 275000,
 		"tenure": "Leasehold",
-		"description": "A well-maintained one-bedroom flat located in a peaceful suburban area. This property offers a cozy living space with a modern open-plan kitchen, a large double bedroom with built-in storage, and a stylish bathroom with contemporary fittings. The flat is part of a secure complex with allocated parking and well-kept communal gardens. Ideal for first-time buyers or professionals seeking a quiet retreat while being well-connected to the city center.",
+		"description": "A well-maintained one-bedroom villa located in a peaceful suburban area. This property offers a cozy living space with a modern open-plan kitchen, a large double bedroom with built-in storage, and a stylish bathroom with contemporary fittings. The flat is part of a secure complex with allocated parking and well-kept communal gardens. Ideal for first-time buyers or professionals seeking a quiet retreat while being well-connected to the city center.",
 		"location": "Elm Street, Manchester M4",
-		"picture": "images/prop4pic1.jpg",
+		"picture": "../any4.png",
 		"url": "properties/prop4.html",
 		"added": { 
 			"month": "July", 
 			"day": 20, 
-			"year": 2023 }
+			"year": 2023 
+		},
+		"lat": 53.4839591,
+		"lng": -2.2446443
 	},
 	{
 		"id": "prop5",
+		"title": "Luxury five-bedroom house with private swimming pool",
 		"type": "House",
 		"bedrooms": 5,
 		"price": 850000,
 		"tenure": "Freehold",
 		"description": "A stunning five-bedroom detached house featuring luxury living at its finest. The property includes a grand entrance hall, a spacious living room with large windows, and a modern kitchen equipped with high-end appliances. The master suite boasts a walk-in closet and en-suite bathroom, while the other bedrooms are perfect for family or guests. Outside, enjoy a private swimming pool, a beautifully landscaped garden, and a covered patio for year-round entertainment. Located in a prestigious neighborhood with excellent schools and amenities nearby.",
 		"location": "Park Avenue, Birmingham B13",
-		"picture": "images/prop5pic1.jpg",
+		"picture": "../house3.png",
 		"url": "properties/prop5.html",
 		"added": { 
 			"month": "June", 
 			"day": 5, 
-			"year": 2023 }
+			"year": 2023 
+		},
+		"lat": 52.4984659,
+		"lng":-1.9263812
 	},
 	{
 		"id": "prop6",
+		"title": "Stylish three-bedroom flat with panoramic city views",
 		"type": "Flat",
 		"bedrooms": 3,
 		"price": 400000,
 		"tenure": "Leasehold",
 		"description": "A stylish three-bedroom flat offering panoramic views of the city skyline. This property includes a large open-plan living and dining area with a private balcony, a modern kitchen with premium finishes, and three spacious bedrooms with ample storage. The master bedroom features an en-suite bathroom, and there is an additional family bathroom. Residents benefit from secure entry, a communal garden, and easy access to shopping, dining, and public transport.",
 		"location": "High Street, Bristol BS1",
-		"picture": "images/prop6pic1.jpg",
+		"picture": "../flat2.png",
 		"url": "properties/prop6.html",
 		"added": { 
 			"month": "May", 
 			"day": 12, 
-			"year": 2023 }
+			"year": 2023 
+		},
+		"lat": 51.4543551,
+		"lng": -2.5948831
 	},
 	{
 		"id": "prop7",
+		"title": "Versatile four-bedroom property with double garage",
 		"type": "Any",
 		"bedrooms": 4,
 		"price": 600000,
 		"tenure": "Freehold",
-		"description": "A versatile four-bedroom property that can be customized to meet the needs of any family or professional. Featuring a spacious open-plan living and dining area, a modern kitchen with high-end appliances, and a private garden, this home also includes a double garage and ample storage space. With its adaptable layout, it’s suitable for both work-from-home professionals and growing families. Located close to schools, shops, and major transport links.",
+		"description": "A versatile four-bedroom property that can be customized to meet the needs of any family or professional. Featuring a spacious open-plan living and dining area, a modern kitchen with high-end appliances, and a private garden, this home also includes a double garage and ample storage space. With its adaptable layout, it's suitable for both work-from-home professionals and growing families. Located close to schools, shops, and major transport links.",
 		"location": "Versatile Lane, Surrey GU3",
-		"picture": "images/prop7pic1.jpg",
+		"picture": "../villa.png",
 		"url": "properties/prop7.html",
 		"added": { 
 			"month": "March", 
 			"day": 18, 
-			"year": 2023 }
+			"year": 2023 
+		},
+		"lat": 51.2476823,
+		"lng": -0.7932803
 	}
 ]

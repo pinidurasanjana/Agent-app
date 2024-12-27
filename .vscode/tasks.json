@@ -10,6 +10,16 @@
 			"presentation": {
 				"reveal": "silent"
 			}
+		},
+		{
+			"type": "npm",
+			"script": "install react-leaflet leaflet",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: install react-leaflet leaflet",
+			"presentation": {
+				"reveal": "silent"
+			}
 		}
 	]
 }

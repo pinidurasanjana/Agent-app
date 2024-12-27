@@ -35,16 +35,19 @@ function Filter(){
                     <label htmlFor="maxbedrooms">Max Bedrooms</label>
                     <input type="number" id="maxbedrooms" min={0} name="maxbedrooms" placeholder="Maximum Bedrooms"/>
                 </div>
-                <div className="item">
+            </div>
+            
+            <div className="bottom">
+                <div className="item1">
                     <label htmlFor="date">Date</label>
                     <input type="date" id="date" name="date" placeholder=""/>
                 </div>
-                <div className="item">
+                <div className="item1">
                     <label htmlFor="postcode">Postcode Area</label>
                     <input type="number" id="postcode" min={0} name="postcode" placeholder="Postcode"/>
                 </div>
                 <button>
-                    <img src="./search.png" alt="search" />
+                    <img src="../search.png" alt="search" />
                 </button>
             </div>
         </div>
