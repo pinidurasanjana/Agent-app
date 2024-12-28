@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function Navbar(){
 const [open,setOpen] = useState(false);
-const user = true;
+const user = false;
    return (
     <nav>
         <div className="left">
@@ -24,8 +24,8 @@ const user = true;
                 <span>John Doe</span>
                 <Link to="/profile" className="profile">Profile</Link>
             </div> : 
-                (<><a href="#login">Login</a>
-                <a href="#signup" className="register">Sign Up</a>
+                (<><a href="./login">Login</a>
+                <a href="./register" className="register">Sign Up</a>
                 </>)
             }
 

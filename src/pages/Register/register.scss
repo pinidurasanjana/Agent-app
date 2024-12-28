@@ -1,45 +1,44 @@
-.login {
+.register {
     height: 100%;
     display: flex;
   
     .formContainer {
       flex: 3;
-      height: 100%;
-      display: flex;
       align-items: center;
       justify-content: center;
+      height: 100%;
+      display: flex;
+      
   
       form {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
   
-        input{
+        button {
           padding: 20px;
-          border: 1px solid gray;
-          border-radius: 5px;
-        }
-  
-        button{
-          padding: 20px;
-          border-radius: 5px;
+          border-radius: 7px;
           border: none;
           background-color: #0056B3;
           color: white;
           font-weight: bold;
           cursor: pointer;
   
-          &:disabled{
-            background-color: #BED9D8;
-            cursor: not-allowed;
+          &:disabled {
+            background-color: #bed9d8;
           }
         }
+        input {
+            padding: 20px;
+            border: 2px solid gray;
+            border-radius: 7px;
+          }
   
-        span{
+        span {
           color: rgba(255, 0, 0, 0.591);
         }
   
-        a{
+        a {
           font-size: 14px;
           color: gray;
           border-bottom: 1px solid gray;
