@@ -1,7 +1,12 @@
 import "./card.scss";
 import { Link } from "react-router-dom";
 
-function Card({property}){
+
+function Card({property,onSave}){
+    const save = () => {
+        if (onSave) onSave(property);
+    };
+    
     return(
         <div className="card">
             <Link to={`/${property.id}`} className="imgContainer">
@@ -21,7 +26,7 @@ function Card({property}){
                         <img src="/bed.png" alt=""/>
                         <span>{property.bedrooms} Bedrooms</span>
                     </div>
-                    <div className="icon">
+                    <div className="icon" onClick={save}>
                         <img src="/save.png" alt=""/>
                     </div>
                 </div>
