@@ -2,12 +2,12 @@ import "./pages/layout/layout.scss";
 import Homepage from "./pages/homepage/homepage";
 import ListPage from "./pages/ListPages/listPage";
 import SinglePage from "./pages/singlepage/singlepage";
+import ProfilePage from "./pages/profilePage/profilePage";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./pages/layout/layout";
-
 
 
 function App() {
@@ -28,6 +28,10 @@ function App() {
         {
           path: "/:id",
           element: <SinglePage />
+        },
+        {
+          path: "/profile",
+          element: <ProfilePage />
         }
       ]
 
