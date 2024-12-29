@@ -1,12 +1,31 @@
 import "./singlepage.scss";
 import Slider from "../../components/slider/slider";
 import properties from "../../lib/properties";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Map from "../../components/map/map";
+import { useEffect, useState } from "react";
 
 function SinglePage(){
     const { id } = useParams();
     const property = properties.find((property) => property.id === id);
+
+    const [savedProperties, setSavedProperties] = useState(() => {
+            const saved = localStorage.getItem("savedProperties");
+            return saved ? JSON.parse(saved) : [];
+        });
+        const handleSaveProperty = (property) => {
+            if (!savedProperties.some((saved) => saved.id === property.id)) {
+                const updatedSavedProperties = [...savedProperties, property];
+                setSavedProperties(updatedSavedProperties);
+                localStorage.setItem("savedProperties", JSON.stringify(updatedSavedProperties));
+            }
+        };
+        useEffect(() => {
+            const saved = localStorage.getItem("savedProperties");
+            if (saved) {
+                setSavedProperties(JSON.parse(saved));
+            }
+        }, []);
 
     return(
         <div className="singlePage">
@@ -47,9 +66,9 @@ function SinglePage(){
                     <div className="mapContainer">
                         <Map items={properties}/>
                     </div>
-                    <button>
+                    <button className="save" onClick={() => handleSaveProperty(property)}>
                         <img src="/save.png" alt=""/>
-                        Save the Place
+                        <span>Save the Place</span>
                     </button>
                 </div>
             </div>

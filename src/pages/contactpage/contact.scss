@@ -1,0 +1,36 @@
+.contactPage {
+    padding: 20px;
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    form {
+      .formGroup {
+        margin-bottom: 15px;
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  

@@ -1,0 +1,56 @@
+.servicesPage {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+
+  .heroSection {
+    background: #f9f9f9;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .servicesContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    .service {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 80px;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

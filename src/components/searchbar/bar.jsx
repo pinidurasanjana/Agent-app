@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./bar.scss";
 import { useState } from "react";
 
@@ -32,7 +33,9 @@ function Bar() {
         <input type="number" name='minprice' min={0} placeholder='Minimum Price' />
         <input type="number" name='maxprice' min={0} placeholder='Maximum Price' />
         <button>
-          <img src="./search.png" alt="search" />
+          <Link to="./list">
+            <img src="./search.png" alt="search" />
+          </Link>
         </button>
       </form>
     </div>

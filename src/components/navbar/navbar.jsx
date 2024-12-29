@@ -1,6 +1,6 @@
 import "./navbar.scss";
 import {useState} from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar(){
 const [open,setOpen] = useState(false);
@@ -8,38 +8,29 @@ const user = false;
    return (
     <nav>
         <div className="left">
-            <a href="#home" className="logo">
-                <img src="/logo.png" alt=""/>
-                <span>Propify</span>                
-            </a>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+                <Link to="/" className="logo">
+                    <img src="/logo.png" alt="Logo" />
+                    <span>Propify</span>
+                </Link>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/services">Services</Link>
+                <Link to="/contact">Contact</Link>
             
         </div>
         <div className="right">
-            {user ? <div className="user">
-                <img src="/user.png" alt=""/>
-                <span>John Doe</span>
-                <Link to="/profile" className="profile">Profile</Link>
-            </div> : 
-                (<><a href="./login">Login</a>
-                <a href="./register" className="register">Sign Up</a>
-                </>)
-            }
+            <a href="./profile" className="register">Profile</a>            
 
             <div className="menuIcon">
                 <img src="/menu.png" alt="" onClick={() => setOpen((prev) => !prev)}/>
             </div>
 
             <div className={open ? "menuList active" : "menuList"}>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-                <a href="#login">Login</a>
-                <a href="#signup">Sign Up</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/services">Services</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/.register">Profile</Link>
             </div>
         </div>
     </nav>

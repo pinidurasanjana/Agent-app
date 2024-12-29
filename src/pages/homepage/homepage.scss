@@ -6,38 +6,43 @@
 
     .txtContainer{ 
         flex: 3;
-    }
-    .wrapper{
-        padding-right: 100px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        justify-content: center;
-        height: 100%;
 
-        @include lg{
-            padding-right: 50px;
-        }
+        .wrapper{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+            height: 100%;
     
-        @include md{
-            padding: 0;
-        }
+            @include lg{
+                padding-right: 50px;
+            }
+        
+            @include md{
+                padding: 0;
+            }
+    
+            @include sm{
+                justify-content: flex-start;
+            }
+    
+            .topic{
+                font-size: 64px;
+    
+                @include lg {
+                    font-size: 48px;
+                }
+            }
 
-        @include sm{
-            justify-content: flex-start;
-        }
-
-        .topic{
-            font-size: 64px;
-
-            @include lg {
-                font-size: 48px;
+            .desc{
+                font-family: cursive;
             }
         }
+        
+
     }
-    .desc{
-        font-family: cursive;
-    }
+    
     .imgContainer{
         flex: 2;
         background-color: #E3F2FD;

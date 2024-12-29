@@ -49,12 +49,12 @@ function ProfilePage() {
         <div className="save">
             <div className="wrapper">
                 <h1>Saved Items</h1>
-                <button className="edit" onClick={clearSavedProperties}>Clear Saved Items</button>
-                <div className="list">
+                <button className="edit" onClick={clearSavedProperties}>Clear Saved Items</button> 
+            </div>
+            <div className="list">
                     {savedProperties.map((property) => (
                         <Card key={property.id} property={property} />
                     ))}
-                </div>
             </div>
         </div>
     </div>
