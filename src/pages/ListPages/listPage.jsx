@@ -4,6 +4,7 @@ import Filter from "../../components/filter/filter";
 import Card from "../../components/card/card";
 import Map from "../../components/map/map";
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 function ListPage(){
     const [filteredProperties, setFilteredProperties] = useState(Properties);
@@ -12,6 +13,23 @@ function ListPage(){
         return saved ? JSON.parse(saved) : [];
     });
     
+    const [searchParams] = useSearchParams();
+
+    useEffect(() => {
+        const tenure = searchParams.get("tenure")?.toLowerCase();
+        const location = searchParams.get("location")?.toLowerCase();
+    
+        const results = Properties.filter((property) => {
+          const propertyTenure = property.tenure?.toLowerCase();
+          const propertyLocation = property.location.toLowerCase();
+    
+          return (
+            (tenure === "" || propertyTenure === tenure) &&
+            (location === "" || propertyLocation.includes(location))
+          );
+        });
+        setFilteredProperties(results);
+    }, [searchParams]);
 
     const handleFilter = (filters) => {
         const results = Properties.filter((property) => {
@@ -57,9 +75,13 @@ function ListPage(){
             <div className="listContainer">
                 <div className="wrapper">
                     <Filter onFilter={handleFilter}/>
-                    {filteredProperties.map((property)=>(
+                    {filteredProperties.length > 0 ? (
+                        filteredProperties.map((property) => (
                         <Card key={property.id} property={property} onSave={handleSaveProperty}/>
-                    ))}
+                    ))
+                    ) : (
+                        <p className="no-properties">No properties found.</p>
+                    )}
                 </div>
             </div>   
             <div className="mapContainer">

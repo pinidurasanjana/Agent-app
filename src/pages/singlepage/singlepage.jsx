@@ -1,7 +1,7 @@
 import "./singlepage.scss";
 import Slider from "../../components/slider/slider";
 import properties from "../../lib/properties";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Map from "../../components/map/map";
 import { useEffect, useState } from "react";
 

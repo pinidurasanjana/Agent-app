@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import "./bar.scss";
 import { useState } from "react";
 
-const types =["Buy","Rent"];  //Array of types
+const tenures = ["Freehold", "Leasehold"]; //Array of types
 
 function Bar() {
 
   const [query,setQuery] = useState({
-    type: 'Buy',
-    location: ''
+    tenure: 'Freehold',
+    location: '',
   }); // State for the search query
   
   const switchType = (val) =>{
-    setQuery(prev => ({...prev, type: val}))
+    setQuery(prev => ({...prev, tenure: val}))
   }; // Function to switch between buy and rent
 
   const handleChange = (e) =>{
@@ -23,18 +23,18 @@ function Bar() {
   return (
     <div className="searchbar">
       <div className="type">
-        {types.map((type)=>(
-          <button key={type} onClick={()=>switchType(type)} 
-            className={query.type === type ? "active" : ""}
+        {tenures.map((tenure)=>(
+          <button key={tenure} onClick={()=>switchType(tenure)} 
+            className={query.tenure === tenure ? "active" : ""}
           >
-            {type}
+            {tenure}
           </button>
         ))}
       </div>
       <form>
         <input type="text" name='location' placeholder='Location' onChange={handleChange}/>
         <button>
-          <Link to={`./list?type=${query.type}&location=${query.location}`}>
+          <Link to={`./list?tenure=${query.tenure}&location=${query.location}`}>
             <img src="./search.png" alt="search" />
           </Link>
         </button>

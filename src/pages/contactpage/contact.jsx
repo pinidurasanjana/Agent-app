@@ -5,7 +5,7 @@ function ContactPage() {
   return (
     <div className="contactPage">
       <h1>Contact Us</h1>
-      <p>We’d love to hear from you! Reach out to us for any queries or assistance.</p>
+      <p>We'd love to hear from you! Reach out to us for any queries or assistance.</p>
       <form>
         <div className="formGroup">
           <label htmlFor="name">Name:</label>

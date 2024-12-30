@@ -3,8 +3,8 @@ import {useState} from "react";
 import { Link } from "react-router-dom";
 
 function Navbar(){
-const [open,setOpen] = useState(false);
-const user = false;
+    const [open,setOpen] = useState(false);
+
    return (
     <nav>
         <div className="left">
@@ -30,7 +30,7 @@ const user = false;
                     <Link to="/about">About</Link>
                     <Link to="/services">Services</Link>
                     <Link to="/contact">Contact</Link>
-                    <Link to="/.register">Profile</Link>
+                    <Link to="/profile">Profile</Link>
             </div>
         </div>
     </nav>
