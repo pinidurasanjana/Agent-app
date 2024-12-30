@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Card({property,onSave}){
     const save = () => {
-        if (onSave) onSave(property);
+        if (onSave) {onSave(property)};
     };
     
     return(

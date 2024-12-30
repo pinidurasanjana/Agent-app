@@ -7,6 +7,7 @@ import ProfileUpdatePage from "./pages/updateprofile/edit";
 import AboutPage from "./pages/AboutPage/about";
 import ServicesPage from "./pages/servicepage/service";
 import ContactPage from "./pages/contactpage/contact";
+import React from "react";
 
 import {
   createBrowserRouter,
@@ -28,7 +29,7 @@ function App() {
         },
         {
           path: "/list",
-          element: <ListPage />
+          element: <ListPage />,
         },
         {
           path: "/:id",

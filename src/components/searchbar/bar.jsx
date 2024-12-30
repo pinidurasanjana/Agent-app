@@ -2,16 +2,13 @@ import { Link } from "react-router-dom";
 import "./bar.scss";
 import { useState } from "react";
 
-
 const types =["Buy","Rent"];  //Array of types
 
 function Bar() {
 
   const [query,setQuery] = useState({
     type: 'Buy',
-    location: '',
-    minprice: 0,
-    maxprice: 0
+    location: ''
   }); // State for the search query
   
   const switchType = (val) =>{
@@ -35,11 +32,9 @@ function Bar() {
         ))}
       </div>
       <form>
-        <input type="text" name='location' placeholder='City Location' onChange={handleChange}/>
-        <input type="number" name='minprice' min={0} placeholder='Minimum Price' onChange={handleChange}/>
-        <input type="number" name='maxprice' min={0} placeholder='Maximum Price' onChange={handleChange}/>
+        <input type="text" name='location' placeholder='Location' onChange={handleChange}/>
         <button>
-          <Link to={`./list?type=${query.type}&location=${query.location}&minprice=${query.minprice}&maxprice=${query.maxprice}`}>
+          <Link to={`./list?type=${query.type}&location=${query.location}`}>
             <img src="./search.png" alt="search" />
           </Link>
         </button>
