@@ -7,13 +7,14 @@ import ProfileUpdatePage from "./pages/updateprofile/edit";
 import AboutPage from "./pages/AboutPage/about";
 import ServicesPage from "./pages/servicepage/service";
 import ContactPage from "./pages/contactpage/contact";
+import Layout from "./pages/layout/layout";
 import React from "react";
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Layout from "./pages/layout/layout";
+
 
 
 function App() {
